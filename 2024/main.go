@@ -30,7 +30,7 @@ func getInputFile(day int) string {
 
 func main() {
 
-	day := 2
+	day := 3
 	input := getInputFile(day)
 
 	// day 1
@@ -41,9 +41,16 @@ func main() {
 	// fmt.Println("Operation took:", elapsedTime)
 
 	//day 2
+	// startTime := time.Now()
+	// day2_part1(input)
+	// day2_part2(input)
+	// elapsedTime := time.Since(startTime)
+	// fmt.Println("Operation took:", elapsedTime)
+
+	//day 3
 	startTime := time.Now()
-	day2_part1(input)
-	day2_part2(input)
+	day3_part1(input)
+	day3_part2(input)
 	elapsedTime := time.Since(startTime)
 	fmt.Println("Operation took:", elapsedTime)
 }

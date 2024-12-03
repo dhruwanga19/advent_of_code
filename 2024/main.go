@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"time"
 )
 
 func getInputFile(day int) string {
@@ -29,8 +30,20 @@ func getInputFile(day int) string {
 
 func main() {
 
-	day := 1
+	day := 2
 	input := getInputFile(day)
-	day1_part1(input)
-	day1_part2(input)
+
+	// day 1
+	// startTime := time.Now()
+	// day1_part1(input)
+	// day1_part2(input)
+	// elapsedTime := time.Since(startTime)
+	// fmt.Println("Operation took:", elapsedTime)
+
+	//day 2
+	startTime := time.Now()
+	day2_part1(input)
+	day2_part2(input)
+	elapsedTime := time.Since(startTime)
+	fmt.Println("Operation took:", elapsedTime)
 }

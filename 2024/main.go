@@ -27,37 +27,33 @@ func getInputFile(day int) string {
 
 	return inputFile
 }
+func runDay(day int) {
+	input := getInputFile(day)
+	startTime := time.Now()
+	switch day {
+	case 1:
+		day1_part1(input)
+		day1_part2(input)
+	case 2:
+		day2_part1(input)
+		day2_part2(input)
+	case 3:
+		day3_part1(input)
+		day3_part2(input)
+	case 4:
+		day4_part1(input)
+		day4_part2(input)
+	case 5:
+		day5_part1(input)
+		day5_part2(input)
+	default:
+		fmt.Printf("Day %d is not implemented\n", day)
+	}
+	elapsedTime := time.Since(startTime)
+	fmt.Printf("Day %d operation took: %s\n", day, elapsedTime)
+}
 
 func main() {
-
-	day := 4
-	input := getInputFile(day)
-
-	// day 1
-	// startTime := time.Now()
-	// day1_part1(input)
-	// day1_part2(input)
-	// elapsedTime := time.Since(startTime)
-	// fmt.Println("Operation took:", elapsedTime)
-
-	//day 2
-	// startTime := time.Now()
-	// day2_part1(input)
-	// day2_part2(input)
-	// elapsedTime := time.Since(startTime)
-	// fmt.Println("Operation took:", elapsedTime)
-
-	//day 3
-	// startTime := time.Now()
-	// day3_part1(input)
-	// day3_part2(input)
-	// elapsedTime := time.Since(startTime)
-	// fmt.Println("Operation took:", elapsedTime)
-
-	//day 4
-	startTime := time.Now()
-	day4_part1(input)
-	day4_part2(input)
-	elapsedTime := time.Since(startTime)
-	fmt.Println("Operation took:", elapsedTime)
+	day := 5
+	runDay(day)
 }

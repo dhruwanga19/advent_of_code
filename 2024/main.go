@@ -49,6 +49,9 @@ func runDay(day int) {
 	case 6:
 		day6_part1(input)
 		// day6_part2(input)
+	case 7:
+		day7_part1(input)
+		day7_part2(input)
 	default:
 		fmt.Printf("Day %d is not implemented\n", day)
 	}
@@ -57,6 +60,6 @@ func runDay(day int) {
 }
 
 func main() {
-	day := 6
+	day := 7
 	runDay(day)
 }

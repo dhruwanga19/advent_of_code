@@ -74,7 +74,7 @@ func day6_part2(input string) {
 	for i, line := range lines {
 		grid[i] = []rune(line)
 	}
-	output := 0
+	// output := 0
 
 	startRow := -1
 	startCol := -1
@@ -126,5 +126,5 @@ func day6_part2(input string) {
 		startRow = nextRow
 		startCol = nextCol
 	}
-	output = len(visLocs)
+	// output = len(visLocs)
 }
